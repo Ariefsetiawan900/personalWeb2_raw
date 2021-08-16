@@ -396,3 +396,36 @@ Home Section
 .about-text .btn {
     margin: 0 15px 15px 0;
 }
+
+/* ------------
+Portofolio Section
+---------------- */
+.portofolio-section{
+    padding-bottom: 50px;
+}
+.portofolio-item {
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px 30px;
+}
+
+.portofolio-item-thumbnail {
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40 );
+    border-radius: 10px;
+}
+
+.portofolio-item-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portofolio-item h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.portofolio-item-details {
+    display: none;
+}
