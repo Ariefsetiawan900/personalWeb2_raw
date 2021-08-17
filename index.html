@@ -23,10 +23,16 @@
             <nav class="nav">
               <div class="nav-inner">
                 <ul>
-                  <li><a href="#" class="nav-item">Home</a></li>
-                  <li><a href="#" class="nav-item">About</a></li>
-                  <li><a href="#" class="nav-item">Portofolio</a></li>
-                  <li><a href="#" class="nav-item">Contact</a></li>
+                  <li><a href="#home" class="nav-item link-item">Home</a></li>
+                  <li><a href="#about" class="nav-item link-item">About</a></li>
+                  <li>
+                    <a href="#portofolio" class="nav-item link-item"
+                      >Portofolio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">Contact</a>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -36,15 +42,15 @@
       <!-- Header End  -->
 
       <!-- Home Section Start -->
-      <section class="home-section align-items-center">
+      <section class="home-section align-items-center active" id="home">
         <div class="container">
           <div class="row align-items-center">
             <div class="home-text">
               <p>Hello I'm</p>
               <h1>John Doe</h1>
               <h2>Frontend Developer</h2>
-              <a href="#" class="btn">More About Me</a>
-              <a href="#" class="btn">Portofolio</a>
+              <a href="#about" class="btn link-item">More About Me</a>
+              <a href="#portofolio" class="btn link-item">Portofolio</a>
             </div>
             <div class="home-img">
               <div class="img-box">
@@ -57,7 +63,7 @@
       <!-- Home Section  End -->
 
       <!-- About Section Start -->
-      <section class="about-section sec-padding hidden">
+      <section class="about-section sec-padding" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -179,8 +185,10 @@
               </div>
               <!-- Experience End -->
 
-              <a href="#" class="btn">Download Cv</a>
-              <a href="#" class="btn">Contact Me</a>
+              <a href="./Assets/dummys/cv.pdf" target="_blank" class="btn"
+                >Download Cv</a
+              >
+              <a href="#contact" class="btn link-item">Contact Me</a>
             </div>
           </div>
         </div>
@@ -189,7 +197,7 @@
       <!-- About Section End -->
 
       <!-- Portofolio Section Start  -->
-      <section class="portofolio-section sec-padding hidden">
+      <section class="portofolio-section sec-padding" id="portofolio">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -437,7 +445,7 @@
       <!-- Portofolio Section End  -->
 
       <!-- Contact section Start -->
-      <section class="contact-section sec-padding hidden">
+      <section class="contact-section sec-padding" id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title">
