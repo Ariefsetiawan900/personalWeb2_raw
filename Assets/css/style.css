@@ -239,24 +239,31 @@ button {
 }
 
 @keyframes zoomInOut {
-    0%,100%{
+
+    0%,
+    100% {
         transform: scale(0.5);
     }
-    50%{
+
+    50% {
         transform: scale(1);
     }
 }
 
 @keyframes bounceTop {
-    0%,100%{
+
+    0%,
+    100% {
         transform: translateY(-50px);
     }
-    50%{
+
+    50% {
         transform: translateY(0px);
-    } 
+    }
 }
+
 /* Background Circles  */
-.bg-circles{
+.bg-circles {
     position: fixed;
     top: 0;
     height: 100%;
@@ -265,11 +272,13 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
-.bg-circles div{
+
+.bg-circles div {
     position: absolute;
     border-radius: 50%;
 }
-.bg-circles .circle-1{
+
+.bg-circles .circle-1 {
     height: 60px;
     width: 60px;
     background-color: var(--blue);
@@ -278,16 +287,18 @@ button {
     opacity: 0.3;
     animation: zoomInOut 8s linear infinite;
 }
-.bg-circles .circle-2{
-height: 80px;
-width: 80px;
-background-color: var(--main-color);
-left: 30%;
-top: 50%;
-opacity: 0.4;
-animation: bounceTop 5s ease-in-out infinite;
+
+.bg-circles .circle-2 {
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    left: 30%;
+    top: 50%;
+    opacity: 0.4;
+    animation: bounceTop 5s ease-in-out infinite;
 }
-.bg-circles .circle-3{
+
+.bg-circles .circle-3 {
     height: 120px;
     width: 120px;
     background-color: var(--white);
@@ -295,7 +306,8 @@ animation: bounceTop 5s ease-in-out infinite;
     right: -60px;
     opacity: 0.6;
 }
-.bg-circles .circle-4{
+
+.bg-circles .circle-4 {
     height: 50px;
     width: 50px;
     background-color: var(--orange);
@@ -305,7 +317,7 @@ animation: bounceTop 5s ease-in-out infinite;
 }
 
 /* Overlay  */
-.overlay{
+.overlay {
     position: fixed;
     left: 0;
     top: 0;
@@ -315,9 +327,11 @@ animation: bounceTop 5s ease-in-out infinite;
     z-index: 200;
     visibility: hidden;
 }
-.overlay.active{
+
+.overlay.active {
     visibility: visible;
 }
+
 /* ---------
 Header
 ----------  */
@@ -882,4 +896,87 @@ Portofolio Section
 .contact-info-item .social-links a:hover {
     color: var(--white);
     background-color: var(--main-color);
+}
+
+/* Responsive */
+@media(max-width:991px) {
+    .container {
+        padding: 0;
+    }
+
+    .home-text,
+    .home-img {
+        width: 100%;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-img {
+        order: -1;
+    }
+
+    .home-img .img-box {
+        max-width: 300px;
+    }
+
+    .home-text .btn {
+        margin: 0 7px 15px;
+    }
+
+    .portofolio-item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media(max-width:767px) {
+
+    .contact-form,
+    .contact-info,
+    .about-img,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text {
+        margin-top: 30px;
+    }
+
+    .portofolio-item {
+        width: calc(100% - 30px);
+    }
+
+    .pp-inner {
+        padding: 30px 15px;
+    }
+
+    .contact-info {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .contact-info-item {
+        padding: 0;
+    }
+}
+
+@media(max-width:575px) {
+
+    .section-title h2,
+    .header .nav-inner ul li a {
+        font-size: 35px;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .home-text h2 {
+        font-size: 18px;
+    }
+
+    .pp-header h3 {
+        font-size: 20px;
+    }
 }
